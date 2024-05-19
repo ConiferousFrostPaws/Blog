@@ -1,0 +1,90 @@
+/* General styles */
+body {
+  font-family: 'Teko', Arial, sans-serif; /* Teko as primary font, fallback to Arial */
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+
+/* Include Teko font from your folder */
+@font-face {
+  font-family: 'Teko';
+  src: url('font/Teko.woff2') format('woff2'),  /* WOFF2 for modern browsers */
+       url('font/Teko.woff') format('woff');  /* WOFF for older browsers */
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #007bff;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Header */
+header {
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.featured-posts article {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.featured-posts h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.interests ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.interests li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+}
