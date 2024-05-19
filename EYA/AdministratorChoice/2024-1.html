@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浏览次数示例</title>
+</head>
+<body>
+    <h1>欢迎访问本页面</h1>
+    <p>本页面的浏览次数是：<span id="visit-count">0</span></p>
+
+    <script>
+        // 获取当前页面的浏览次数
+        let visitCount = localStorage.getItem('page_view_count');
+
+        // 如果没有记录，初始化为0
+        if (visitCount === null) {
+            visitCount = 0;
+        }
+
+        // 增加浏览次数
+        visitCount++;
+
+        // 将新的浏览次数保存到 localStorage 中
+        localStorage.setItem('page_view_count', visitCount);
+
+        // 显示浏览次数
+        document.getElementById('visit-count').textContent = visitCount;
+    </script>
+</body>
+</html>
